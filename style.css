@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(60, 60, 247), rgb(235, 222, 222),  rgb(60, 60, 247));
+
+}
+
+.general{
+    /* border: 3px solid blue; */
+    border-radius: 25px;
+    width: 70%;
+    margin: 5rem auto;
+    min-width: 500px;
+    max-width: 1000px;
+    position: relative;
+    height: 25rem;
+    overflow: auto;
+    box-shadow: 0px 0px 10px black;
+    background: linear-gradient(135deg, rgb(60, 60, 247), rgb(235, 222, 222),  rgb(60, 60, 247));
+    
+}
+h1{
+    width:100%;
+    margin: 5% auto;
+    text-align: center;
+    opacity: 0.1;
+    transition: opacity 4s ease;
+}
+
+h1.visible{
+    opacity: 1;
+}
+.containers{
+    /* border: 2px solid rgb(119, 117, 117); */
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25px;
+}
+/* .containers:hover{
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
+} */
+input{
+    border:none;  
+    width: 90%;
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgb(119, 117, 117);
+}
+input:focus {
+    outline: none;
+}
+.ulElement{
+    /* list-style-type: disc; */
+    /* border: 2px solid rgba(133, 128, 128, 1); */
+    width: 81%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.liElement{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 90%;
+    text-align: center;
+    margin: 0 3rem 0 3rem;
+    border-radius: 25px;
+    /* padding: 0rem 1rem; */
+    font-style: italic;
+    /* border: 2px solid red; */
+    min-width: 19rem;
+    max-width: 680px;
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+  
+    float: right;
+    overflow: hidden;
+}
+
+.liElement:hover{
+    box-shadow: 0px 0px 5px rgb(119, 117, 65)
+}
+.inputValues{
+    /* border: 2px solid red; */
+    height: 20px;
+    margin: 20px;
+}
+.markSpan{
+    margin-right: 1rem;
+}
+.divLiLeft{
+    width: 10rem;
+    flex:5;
+    border-radius: 25px;
+    /* border: 2px solid red; */
+    text-align: left;
+}
+.divLiRight{
+    display: flex;
+    flex:1;
+    text-align: right;
+    width: 10rem;
+    flex-wrap: nowrap;
+    position: relative;
+    
+    /* border: 2px solid red; */
+}
+
+.spanUnlem{
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    opacity: 0.3;
+    /* margin-right: 1rem; */
+    margin-left: 3rem;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    border-radius: 25px;
+
+}
+.spanUnlem:hover{
+    opacity: 1;
+    background-color: rgb(201, 198, 198);
+}
+.span2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* margin-left: 3rem; */
+    text-align: center;
+    /* border: 2px solid red; */
+    width: 2rem;
+    border-radius: 50%;
+}
+.span2:hover{
+    /* background-color: rgb(27, 166, 221); */
+    color: red;
+}
+.spanText{
+    text-align: center;
+    position: relative; /* Pozisyonu belirle */
+    animation: kayanYazi 1s linear; /* Animasyonu tanımla */
+
+}
+button{
+    border-radius: 25px;
+    width: 5rem;
+    height: 2.5rem;
+    font-weight: 600 !important;
+    border: none;
+    background-color: rgb(143, 143, 223) !important;
+    color: white !important;
+    display: inline-block;
+    transition: transform 2s ease-in-out, font-size 2s ease-in-out; /* Geçiş süresi ve tipi */
+}
+button:hover{
+    background-color: rgb(196, 225, 236);
+    /* box-shadow:0px 0px 10px skyblue; */
+   
+    box-shadow: 0px 0px 10px rgb(22, 22, 22);
+    color: white !important;
+    font-weight: 600 !important;
+    transform: translateZ(1rem); /*Hover olduğunda yukarı hareket ettir*/
+    font-size: 1.2rem; /* Hover olduğunda yazıyı büyüt */
+}
+
+
+@keyframes kayanYazi {
+    0% {
+        left: 100%; /* Başlangıç pozisyonu, sağdan başlasın */
+    }
+    100% {
+        left: 0%; /* Bitiş pozisyonu, soldan kaybolsun */
+    }
+}
